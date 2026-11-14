@@ -10,8 +10,7 @@ cask "hm" do
   sha256 arm:   "fc164fe8fb2160e5d87389f6061dbedcfb60d6317e819f7b227366c119378ab9",
          intel: "c06ae4b607023163ff205e4becda7d32cbb58a03e1c713fd6088d770b7c32887"
 
-  url "https://github.com/usehm/hm/releases/download/v#{version}/hm-macos-v#{version}-#{arch}.dmg",
-      verified: "github.com/usehm/hm/"
+  url "https://github.com/usehm/hm/releases/download/v#{version}/hm-macos-v#{version}-#{arch}.dmg"
   name "Hm"
   desc "Native code editor with a built-in AI coding agent"
   homepage "https://usehm.dev/"
