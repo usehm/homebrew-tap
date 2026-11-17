@@ -1,14 +1,14 @@
 # Homebrew cask for hm, rendered into usehm/homebrew-tap by the homebrew job
-# in .github/workflows/release.yml, which fills in 0.1.0 and the
+# in .github/workflows/release.yml, which fills in 0.2.0 and the
 # @SHA256_...@ digests. Edit it here, not in the tap.
 #
 #   brew install --cask usehm/tap/hm
 cask "hm" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.1.0"
-  sha256 arm:   "fc164fe8fb2160e5d87389f6061dbedcfb60d6317e819f7b227366c119378ab9",
-         intel: "c06ae4b607023163ff205e4becda7d32cbb58a03e1c713fd6088d770b7c32887"
+  version "0.2.0"
+  sha256 arm:   "9d86a21d18c8531ddc6c25ba869fa2d51c096d714dc99f1e90c74eb2a771e788",
+         intel: "28111367e57651a48926f33f8a27fcd14f956567f3e2f93b46433f568b1b3e3f"
 
   url "https://github.com/usehm/hm/releases/download/v#{version}/hm-macos-v#{version}-#{arch}.dmg"
   name "Hm"
@@ -58,8 +58,11 @@ cask "hm" do
   zap trash: [
     "~/.config/hm",
     "~/Library/Application Support/hm",
+    "~/Library/Caches/dev.usehm.hm",
     "~/Library/Caches/me.mirzakhani.hm",
+    "~/Library/Preferences/dev.usehm.hm.plist",
     "~/Library/Preferences/me.mirzakhani.hm.plist",
+    "~/Library/Saved Application State/dev.usehm.hm.savedState",
     "~/Library/Saved Application State/me.mirzakhani.hm.savedState",
   ]
 end
