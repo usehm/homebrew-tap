@@ -1,14 +1,14 @@
 # Homebrew cask for hm, rendered into usehm/homebrew-tap by the homebrew job
-# in .github/workflows/release.yml, which fills in 0.2.0 and the
+# in .github/workflows/release.yml, which fills in 0.3.0 and the
 # @SHA256_...@ digests. Edit it here, not in the tap.
 #
 #   brew install --cask usehm/tap/hm
 cask "hm" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.2.0"
-  sha256 arm:   "9d86a21d18c8531ddc6c25ba869fa2d51c096d714dc99f1e90c74eb2a771e788",
-         intel: "28111367e57651a48926f33f8a27fcd14f956567f3e2f93b46433f568b1b3e3f"
+  version "0.3.0"
+  sha256 arm:   "a1fcfe4d9e04dbffe05c8b2c009792a755fb6cbd7b67774891080aec777a56b9",
+         intel: "319bb2281befc69108f5cf01b1ccd0864f1d7c31c4bc2c479ef61085f68bb078"
 
   url "https://github.com/usehm/hm/releases/download/v#{version}/hm-macos-v#{version}-#{arch}.dmg"
   name "Hm"
